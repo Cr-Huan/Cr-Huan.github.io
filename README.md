@@ -14,6 +14,10 @@
 ## 项目信息
 项目托管地址：[github.com/Cr-Huan/contributions-and-sponsorships](https://github.com/Cr-Huan/contributions-and-sponsorships)
 
+Github Page托管仓库：[github.com/Cr-Huan/Cr-Huan.github.io](https://github.com/Cr-Huan/Cr-Huan.github.io)
+
+站点地址：[cas.song-zh.com](https://cas.song-zh.com)
+
 最后更新时间：2025年1月27日。
 
 ## 特别注意
