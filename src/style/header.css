@@ -1,0 +1,11 @@
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin-bottom: 0;
+}

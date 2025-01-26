@@ -1,0 +1,26 @@
+{
+  "data": [
+    {
+      "type": "个人",
+      "name": "宋子桓",
+      "email": "songzihuan@song-zh.com",
+      "phone": "-",
+      "website": "https://song-zh.com",
+      "sponsorDate": "2025/1/7",
+      "amount": "￥5.00",
+      "totalAmount": "￥10.00",
+      "remark": ""
+    },
+    {
+      "type": "个人",
+      "name": "宋子桓",
+      "email": "songzihuan@song-zh.com",
+      "phone": "-",
+      "website": "https://song-zh.com",
+      "sponsorDate": "2025/1/7",
+      "amount": "￥5.00",
+      "totalAmount": "￥5.00",
+      "remark": ""
+    }
+  ]
+}

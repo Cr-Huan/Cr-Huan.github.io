@@ -1,0 +1,24 @@
+/* Main content styles */
+main {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/*Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: absolute;
+    bottom: 0;
+}
