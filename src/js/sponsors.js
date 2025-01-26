@@ -7,7 +7,7 @@ async function fetchSponsors() {
         const sponsorsData = await response.json();
         populateTable(sponsorsData);
     } catch (error) {
-        console.error('获取赞助商数据时出错:', error);
+        console.error('获取赞助者数据时出错:', error);
     }
 }
 

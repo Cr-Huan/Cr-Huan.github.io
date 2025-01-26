@@ -26,6 +26,8 @@ const config = {
     index: path.resolve(__dirname, 'src/index.js'),
     leave: path.resolve(__dirname, 'src/leave.js'),
     sponsors: path.resolve(__dirname, 'src/sponsors.js'),
+    contributors: path.resolve(__dirname, "src/contributors.js"),
+    notfound: path.resolve(__dirname, "src/404.js"),
   },
 
   output: {
@@ -131,6 +133,20 @@ const config = {
       template: path.resolve(__dirname, 'src/html/sponsors.html'), //指定模板文件
       filename: 'sponsors.html',
       chunks: ['common', 'sponsors'],
+      publicPath: './'
+    }),
+    new HtmlWebpackPlugin({
+      inject: 'body',
+      template: path.resolve(__dirname, 'src/html/contributors.html'), //指定模板文件
+      filename: 'contributors.html',
+      chunks: ['common', 'contributors'],
+      publicPath: './'
+    }),
+    new HtmlWebpackPlugin({
+      inject: 'body',
+      template: path.resolve(__dirname, 'src/html/404.html'), //指定模板文件
+      filename: '404.html',
+      chunks: ['common', 'notfound'],
       publicPath: './'
     }),
     new MiniCssExtractPlugin({
