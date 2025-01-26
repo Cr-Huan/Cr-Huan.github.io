@@ -24,6 +24,7 @@ const config = {
   entry: {
     common: path.resolve(__dirname, 'src/common.js'),
     index: path.resolve(__dirname, 'src/index.js'),
+    leave: path.resolve(__dirname, 'src/leave.js'),
     sponsors: path.resolve(__dirname, 'src/sponsors.js'),
   },
 
@@ -116,6 +117,13 @@ const config = {
       template: path.resolve(__dirname, 'src/html/index.html'), //指定模板文件
       filename: 'index.html',
       chunks: ['common', 'index'],
+      publicPath: './'
+    }),
+    new HtmlWebpackPlugin({
+      inject: 'body',
+      template: path.resolve(__dirname, 'src/html/leave.html'), //指定模板文件
+      filename: 'leave.html',
+      chunks: ['common', 'leave'],
       publicPath: './'
     }),
     new HtmlWebpackPlugin({
