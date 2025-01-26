@@ -4,8 +4,8 @@
   "description": "宋子桓项目的支持者和贡献者项目名单",
   "repository": "https://github.com/SongZihuan/contributions-and-sponsorships",
   "bug": "https://github.com/SongZihuan/contributions-and-sponsorships/issues",
-  "homepage": "https://github.com/SongZihuan/contributions-and-sponsorships",
-  "module": "./src/index.js",
+  "homepage": "https://cas.song-zh.com",
+  "module": "./src/main.js",
   "type": "module",
   "private": true,
   "engines": {
@@ -23,7 +23,8 @@
     "build:prod": "npx webpack --config webpack_config_prod.js",
     "build:prod:run": "npx pnpm build:prod && npx pnpm prod",
     "github": "npx webpack server --config webpack_config_github.js",
-    "build:github": "npx webpack --config webpack_config_github.js && node github-page/cname.js"
+    "build:github": "npx webpack --config webpack_config_github.js",
+    "build:github:run": "npx pnpm build:github && npx pnpm github"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",

@@ -1,3 +1,5 @@
-import "./style/header.css"
-import "./style/index.css"
-import "./style/footer.css"
+import './style/header.css'
+import './style/index.css'
+import './style/footer.css'
+import './js/copyright.js'
+import './js/beian.js'

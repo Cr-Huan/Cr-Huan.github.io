@@ -10,3 +10,7 @@ main {
 p {
     margin-bottom: 1rem;
 }
+
+footer p {
+    margin-bottom: 0;
+}

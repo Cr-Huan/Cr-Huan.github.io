@@ -1,6 +1,6 @@
 // 清理状态
 import 'normalize.css'
-import "./style/body.css"
+import './style/body.css'
 import './style/a.css'
 import './style/button.css'
 import './utils.js'

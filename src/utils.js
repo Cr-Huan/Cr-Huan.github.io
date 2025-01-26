@@ -1,7 +1,7 @@
-import stringTool from "./utils/string.js"
+import stringTool from './utils/string.js'
 
 const utils = {
-    stringTool,
+  stringTool
 }
 
 window.utils = utils

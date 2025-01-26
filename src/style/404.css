@@ -13,3 +13,9 @@ p {
     color: #666;
     margin-bottom: 1rem;
 }
+
+footer p {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 0;
+}

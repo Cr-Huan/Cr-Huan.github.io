@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=`<p>Copyright &copy; ${(new Date).getFullYear()} 宋子桓（Song Zihuan）. All rights reserved.</p>`,t=document.getElementById("copyright-container");t&&(t.innerHTML=e)})();
