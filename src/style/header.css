@@ -1,9 +1,10 @@
 /* Header styles */
 header {
+    width: calc(100% - 4rem);
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 header h1 {

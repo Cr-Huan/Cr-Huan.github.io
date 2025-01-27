@@ -1,6 +1,4 @@
-import './style/header.css'
 import './style/contributors.css'
-import './style/footer.css'
 import './js/contributors.js'
 import './js/copyright.js'
 
