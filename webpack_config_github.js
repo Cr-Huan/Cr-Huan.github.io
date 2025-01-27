@@ -42,6 +42,7 @@ const config = {
     contributors: path.resolve(__dirname, 'src/contributors.js'),
     sponsors: path.resolve(__dirname, 'src/sponsors.js'),
     sponsorsnow: path.resolve(__dirname, 'src/sponsors-now.js'),
+    zsxq: path.resolve(__dirname, 'src/zsxq.js'),
     notfound: path.resolve(__dirname, 'src/404.js')
   },
 
@@ -180,6 +181,14 @@ const config = {
       template: path.resolve(__dirname, 'src/html/sponsors-now.html'), //指定模板文件
       filename: 'sponsors-now.html',
       chunks: ['common', 'sponsorsnow'],
+      minify: html_minify,
+      publicPath: './'
+    }),
+    new HtmlWebpackPlugin({
+      inject: 'body',
+      template: path.resolve(__dirname, 'src/html/zsxq.html'), //指定模板文件
+      filename: 'zsxq.html',
+      chunks: ['common', 'zsxq'],
       minify: html_minify,
       publicPath: './'
     }),

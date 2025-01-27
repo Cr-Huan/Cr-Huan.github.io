@@ -5,10 +5,12 @@ if (!toURL) {
   window.close()
 }
 
+// eslint-disable-next-line no-unused-vars
 function gotoURL() {
   window.location.href = toURL
 }
 
+// eslint-disable-next-line no-unused-vars
 function closePage() {
   window.close()
 }

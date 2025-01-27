@@ -17,13 +17,14 @@ footer p {
     margin-bottom: 0;
 }
 
-.pay-container {
+.zsxq-container {
     display: flex;
     flex-wrap: wrap; /* 允许项目换行 */
+    gap: 20px; /* 项目间的间隔 */
     justify-content: center; /* 水平居中对齐 */
 }
 
-.pay-container .img-box {
+.zsxq-container .zsxq-img-box {
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 100%;
@@ -34,12 +35,12 @@ footer p {
 
 /* 当屏幕宽度至少为768px时，图片横向排列 */
 @media (min-width: 768px) {
-    .pay-container .img-box {
+    .zsxq-container .zsxq-img-box {
         flex-basis: calc(45% - 5px); /* 每个图片盒子占据50%宽度减去间隔的一半，保持间距 */
     }
 }
 
-.pay-container .img-box .pay-img {
+.zsxq-container .zsxq-img-box .qrcode {
     width: 95%;
     margin-right: 5px;
     margin-left: 5px;
