@@ -29,3 +29,45 @@ function setIcon() {
 }
 
 document.addEventListener('DOMContentLoaded', setIcon)
+
+const minWidth = 250;
+let innerHTML = ''
+let loadInnerHTML = ''
+const emptyInnerHTML = () => `
+<div id="NEED_RELOAD" style="display: flex; justify-content: center; width: ${window.innerWidth}px;">
+<p style="font-size: 8vw; width: 95%; text-align: center;"> 
+ 屏幕太小，无法展示内容。
+ <br /> 
+ The screen is too small to display the content.  
+</p>
+</div>
+`
+
+function handlerWindowResize() {
+  const screenWidth = window.screen.width;
+  if (screenWidth < minWidth) {
+    document.body.innerHTML = emptyInnerHTML()
+  } else if (loadInnerHTML === '') {
+    window.location.reload()
+  } else {
+    document.body.innerHTML = loadInnerHTML
+  }
+}
+
+function handlerDocumentDOMContentLoaded() {
+  innerHTML = document.body.innerHTML
+  const screenWidth = window.screen.width;
+  if (screenWidth < minWidth) {
+    document.body.innerHTML = emptyInnerHTML()
+  }
+  window.addEventListener('resize', handlerWindowResize);
+}
+
+function handlerWindowLoad() {
+  if (document.querySelector('#NEED_RELOAD') === null) {
+    loadInnerHTML = document.body.innerHTML
+  }
+}
+
+document.addEventListener('DOMContentLoaded', handlerDocumentDOMContentLoaded);
+window.addEventListener('load', handlerWindowLoad);

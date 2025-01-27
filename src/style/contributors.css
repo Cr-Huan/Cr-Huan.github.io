@@ -1,13 +1,16 @@
 /* Main content styles */
 main {
-    width: 95%;
+    width: calc(95% - 4rem);
     margin: 3rem auto;
     padding: 2rem;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* 当内容溢出时，自动添加滚动条 */
+    display: block;
 }
 
 table {
+    max-width: 100%;
     width: 100%;
     border-collapse: collapse;
 }
