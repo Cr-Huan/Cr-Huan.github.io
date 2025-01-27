@@ -6,7 +6,7 @@ const config = {
         // 目标环境配置，根据需要调整
         targets: {
           browsers: [
-            // 你可以指定具体的浏览器版本，例如：
+            // 您可以指定具体的浏览器版本，例如：
             // "last 2 versions",
             // ">= 1%",
             // "Chrome >= 49",

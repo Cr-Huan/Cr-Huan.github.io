@@ -1,0 +1,54 @@
+/* Main content styles */
+main {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* 当内容溢出时，自动添加滚动条 */
+    display: block;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+.pay-container {
+    display: flex;
+    flex-wrap: wrap; /* 允许项目换行 */
+    gap: 20px; /* 项目间的间隔 */
+    justify-content: center; /* 水平居中对齐 */
+}
+
+.pay-container .image-box {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 45%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* 当屏幕宽度至少为768px时，图片横向排列 */
+@media (min-width: 768px) {
+    .pay-container .image-box {
+        flex-basis: calc(45% - 5px); /* 每个图片盒子占据50%宽度减去间隔的一半，保持间距 */
+    }
+}
+
+.pay-container .img-box .pay-img {
+    width: 350px;
+}
+
+.import_red {
+    color: red;
+    text-decoration: underline;
+}
+
+.import_red:hover {
+    font-size: 1.2rem;
+    font-weight: bold;
+}

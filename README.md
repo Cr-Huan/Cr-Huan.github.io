@@ -1,6 +1,6 @@
 # 宋子桓（Song Zihuan）代码项目贡献者和赞助者主页。
 
-这是一个非常简单的多入口点（MPA Multiple Page Application）项目，我使用了静态的HTML+CSS+JS进行编码。
+这是一个非常简单的多入口点（MPA Multiple Page Application）项目，我（们）使用了静态的HTML+CSS+JS进行编码。
 
 ## 作者信息
 作者：宋子桓（Song Zihuan）

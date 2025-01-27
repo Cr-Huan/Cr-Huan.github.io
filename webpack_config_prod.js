@@ -29,7 +29,7 @@ const config = {
   context: __dirname,
 
   performance: {
-    hints: 'warning', // 或者 'error'，取决于你希望如何处理超出限制的情况
+    hints: 'warning', // 或者 'error'，取决于您希望如何处理超出限制的情况
     maxAssetSize: 5000000, // 设置单个资源的最大尺寸，例如5MB
     maxEntrypointSize: 10000000 // 设置入口起点的最大尺寸，例如10MB
   },
@@ -38,9 +38,12 @@ const config = {
     common: path.resolve(__dirname, 'src/common.js'),
     index: path.resolve(__dirname, 'src/index.js'),
     leave: path.resolve(__dirname, 'src/leave.js'),
+    contributors: path.resolve(__dirname, 'src/contributors.js'),
     sponsors: path.resolve(__dirname, 'src/sponsors.js'),
-    contributors: path.resolve(__dirname, 'src/contributors.js')
+    sponsorsnow: path.resolve(__dirname, 'src/sponsors-now.js'),
+    notfound: path.resolve(__dirname, 'src/404.js')
   },
+
 
   output: {
     path: path.resolve(__dirname, dist_name), //打包后的文件存放的地方
@@ -136,9 +139,9 @@ const config = {
     }),
     new HtmlWebpackPlugin({
       inject: 'body',
-      template: path.resolve(__dirname, 'src/html/leave.html'), //指定模板文件
-      filename: 'leave.html',
-      chunks: ['common', 'leave'],
+      template: path.resolve(__dirname, 'src/html/contributors.html'), //指定模板文件
+      filename: 'contributors.html',
+      chunks: ['common', 'contributors'],
       minify: html_minify,
       publicPath: './'
     }),
@@ -147,6 +150,14 @@ const config = {
       template: path.resolve(__dirname, 'src/html/sponsors.html'), //指定模板文件
       filename: 'sponsors.html',
       chunks: ['common', 'sponsors'],
+      minify: html_minify,
+      publicPath: './'
+    }),
+    new HtmlWebpackPlugin({
+      inject: 'body',
+      template: path.resolve(__dirname, 'src/html/sponsors-now.html'), //指定模板文件
+      filename: 'sponsors-now.html',
+      chunks: ['common', 'sponsorsnow'],
       minify: html_minify,
       publicPath: './'
     }),
