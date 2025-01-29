@@ -12,13 +12,11 @@ import jQuery from 'jquery'
 
 import Logo from './assets/image/logo.png'
 import WangAn from './assets/image/wangan.png'
-import SongZihuan from './assets/image/songzihuan.jpg'
-import LogoBin from './assets/image/logo_big.png'
+import LogoBing from './assets/image/logo_big.png'
 
 window.Logo = Logo
 window.WangAn = WangAn
-window.SongZihuan = SongZihuan
-window.LogoBig = LogoBin
+window.LogoBig = LogoBing
 
 window.jQuery = jQuery
 window.$ = jQuery
